@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c19200b02f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>NEWS <span>APP</span></h2>
+        </div>
+        <div class="link">
+            <ul>
+                <li><a href="#" id="world"  onclick="clickOnNavItem('world')">Home</a></li>
+                <li><a href="#" id="cricket"  onclick="clickOnNavItem('cricket')">Cricket</a></li>
+                <li><a href="#" id="politics"  onclick="clickOnNavItem('politics')">Politics</a></li>
+                <li><a href="#" id="technology"  onclick="clickOnNavItem('technology')">Technology</a></li>
+
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-text" class="news-input" placeholder="eg. Cricket">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="card-container container" id="card-container">
+           
+        </div>
+    </main>
+    
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="News Image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h2 id="news-title">Title</h2>
+                <h6 id="news-source" class="news-source" >End gadget 27/03/2024      </h6>
+                <p id="news-desc" class="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta vero optio suscipit delectus vitae fugit harum ab adipisci voluptas doloribus?</p    >
+            </div>
+        </div>
+
+    </template>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
